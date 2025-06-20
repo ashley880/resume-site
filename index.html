@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ashley Njagi | IT Professional</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<!-- Floating Icon Layer -->
+<div class="floating-icons">
+    <div class="float-icon" style="top:10%; left:5%;">💻</div>
+    <div class="float-icon" style="top:50%; left:80%;">⚙️</div>
+    <div class="float-icon" style="top:75%; left:15%;">🗂️</div>
+    <div class="float-icon" style="top:20%; left:60%;">🖥️</div>
+    <div class="float-icon" style="top:85%; left:90%;">📡</div>
+  </div>
+  
+  <!-- Page 1: About Me -->
+  <section id="page1" class="page active">
+    <div class="content">
+      <h1>Ashley Njagi</h1>
+      <h2>IT Professional</h2>
+      <p>Hi! I’m an IT enthusiast with a passion for technology, problem-solving, and creating user-friendly digital solutions. With training in Business IT and real-world experience in support and sales, I enjoy bridging the gap between people and technology—whether that’s through websites, systems, or smart tools.</p>
+    </div>
+    <div class="nav">
+      <button onclick="goToPage(2)">Next →</button>
+    </div>
+  </section>
+
+  <!-- Page 2: Skills, Education, Projects -->
+  <section id="page2" class="page">
+    <div class="content">
+      <h2>Technical Skills</h2>
+      <ul>
+        <li><strong>Languages:</strong> HTML, CSS, JavaScript, Python</li>
+        <li><strong>Tools:</strong> Git, VS Code, Linux, Figma</li>
+        <li><strong>Databases:</strong> MySQL, MongoDB</li>
+      </ul>
+
+      <h2>Work Experience</h2>
+      <ul>
+        <li>Kenya Revenue Authority Ltd</li>
+        <li>Embu Water & Sanitation Company Ltd</li>
+        <li>Rosaflat Consulting Ltd</li>
+      </ul>
+
+      <h2>Projects</h2>
+      <ul>
+        <li><strong>Inventory System</strong> – HTML, PHP, MySQL</li>
+        <li><strong>Portfolio Site</strong> – Personal resume website</li>
+      </ul>
+    </div>
+    <div class="nav">
+      <button onclick="goToPage(1)">← Previous</button>
+      <button onclick="goToPage(3)">Next →</button>
+    </div>
+  </section>
+
+  <!-- Page 3: Contact -->
+  <section id="page3" class="page">
+    <div class="content">
+      <h2>Contact Information</h2>
+      <p><strong>Email:</strong> ashleygakii3@gmail.com</p>
+      <p><strong>Phone:</strong> +254 748018222</p>
+      <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/ashley-njagi-337753239" target="_blank">linkedin.com/in/ashley-njagi</a></p>
+      <a href="files/Ashley-Njagi-Resume.pdf" download class="download-btn">Download Resume (PDF)</a>
+
+    </div>
+    <div class="nav">
+      <button onclick="goToPage(2)">← Previous</button>
+    </div>
+  </section>
+
+  <script>
+    function goToPage(pageNumber) {
+      document.querySelectorAll('.page').forEach(section => section.classList.remove('active'));
+      document.querySelector(`#page${pageNumber}`).classList.add('active');
+    }
+  </script>
+
+</body>
+</html>
